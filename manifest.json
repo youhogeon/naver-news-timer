@@ -1,0 +1,18 @@
+{
+    "name": "네이버 뉴스 댓글 자동추천",
+    "description": "네이버 뉴스 댓글 자동추천",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": { 
+      "128": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://n.news.naver.com/*"
+        ],
+        "js": ["./naver.js"]
+      }
+    ],
+    "permissions": ["storage"]
+  }
